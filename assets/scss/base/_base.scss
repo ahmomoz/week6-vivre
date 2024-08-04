@@ -1,0 +1,25 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Lato", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+code {
+  font-family: "Roboto Mono", monospace;
+  color: $success;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+p {
+  margin-bottom: 0;
+}
+.pagination {
+  margin-bottom: 0;
+}
