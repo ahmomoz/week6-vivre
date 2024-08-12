@@ -4,19 +4,971 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif+TC:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+TC:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" type="text/css" href="../../node_modules/icofont/dist/icofont.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <title>index</title>
-    <script type="module" crossorigin src="/week6-vivre/assets/main-154242b0.js"></script>
-    <link rel="stylesheet" href="/week6-vivre/assets/main-b07d1f3d.css">
+    <script type="module" crossorigin src="/week6-vivre/assets/main-3144456f.js"></script>
+    <link rel="stylesheet" href="/week6-vivre/assets/main-b58161df.css">
   </head>
   <body>
-    <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-    <h1 class="index-title">我是首頁</h1>
-    <img src="/week6-vivre/assets/cat-0c0689ae.jpg" style="width: 300px;" alt="cat">
-
-    <footer class="footer">我是 footer</footer>
+    <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light">
+  <div class="container h-100 border-bottom">
+    <a class="navbar-brand p-0" href="#">
+      <img
+        src="data:image/png;base64,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"
+        alt="logo-image"
+        style="width: 96px; height: 28px;">
+    </a>
+    <button
+      class="navbar-toggler" type="button"
+      data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="d-flex align-items-center justify-content-end">
+        <input
+          class="form-control rounded-pill position-reative ms-8"
+          type="search" placeholder="搜尋文章"
+          aria-label="Search" style="width: 276px;">
+        <i
+          class="icofont-search position-absolute text-accent d-flex align-items-center"
+          style="width: 24px; height: 24px; margin-right: 14px;">
+        </i>
+      </form>
+      <ul class="navbar-nav fw-bold align-items-center ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            所有文章
+          </a>
+        </li>
+        <li class="nav-item ms-5">
+          <a class="nav-link" href="#">
+            訂閱方案
+          </a>
+        </li>
+        <li class="nav-item ms-5">
+          <a class="nav-link" href="#">
+            關於我們
+          </a>
+        </li>
+        <li class="ms-5">
+          <button type="button" class="btn btn-accent text-white">
+            登入 / 註冊
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>    <header class="index-banner-section wrap">
+      <div class="container">
+        <div class="bg">
+          <div class="ps-10 h-100 d-flex flex-column justify-content-center">
+            <h5 class="text-white">獻給新世代的生活風格誌</h5>
+            <h1 class="text-white mt-3">一起探索生活的無限可能</h1>
+            <div>
+              <button type="button" class="btn btn-accent text-white fs-5 d-flex align-items-center mt-6">
+                馬上訂閱
+                <i class="bi bi-arrow-right ms-3"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="index-theme-section wrap">
+      <div class="container">
+        <h2>熱門主題</h2>
+        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 gy-6 pt-6">
+          <div class="col">
+            <a href="#">
+              <div class="card text-white theme-card">
+                <img src="/week6-vivre/assets/theme-1-c3f2428d.png" class="card-img" alt="theme-image">
+                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                  <h5 class="card-title">城市漫遊者</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#">
+              <div class="card text-white theme-card">
+                <img src="/week6-vivre/assets/theme-3-6a361920.png" class="card-img" alt="theme-image">
+                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                  <h5 class="card-title">秘境尋蹤人</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#">
+              <div class="card text-white theme-card">
+                <img src="/week6-vivre/assets/theme-5-b39e8856.png" class="card-img" alt="theme-image">
+                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                  <h5 class="card-title">品味設計家</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#">
+              <div class="card text-white theme-card">
+                <img src="/week6-vivre/assets/theme-8-ce962716.png" class="card-img" alt="theme-image">
+                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                  <h5 class="card-title">美食探險記</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#">
+              <div class="card text-white theme-card">
+                <img src="/week6-vivre/assets/theme-2-f68e2e55.png" class="card-img" alt="theme-image">
+                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                  <h5 class="card-title">美學建築誌</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#">
+              <div class="card text-white theme-card">
+                <img src="/week6-vivre/assets/theme-4-3688ebf7.png" class="card-img" alt="theme-image">
+                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                  <h5 class="card-title">慢活生活行</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#">
+              <div class="card text-white theme-card">
+                <img src="/week6-vivre/assets/theme-6-82f2b629.png" class="card-img" alt="theme-image">
+                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                  <h5 class="card-title">工藝匠心賞</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#">
+              <div class="card text-white theme-card">  
+                <img src="/week6-vivre/assets/theme-7-88f0cd69.png" class="card-img" alt="theme-image">
+                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                  <h5 class="card-title">時尚先鋒派</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="index-article-section wrap">
+      <div class="container">
+        <div class="row position-relative">
+          <div class="col-lg-4">
+            <h2>精選文章</h2>
+          </div>
+          <!-- Swiper -->
+          <div class="col-lg-8 swiper mySwiper h-100 px-0 pb-4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide card article-card">
+                <img
+                  src="/week6-vivre/assets/articles-1-ebc46e31.png"
+                  class="card-img-top img-fluid"
+                  alt="article-image">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    私人島嶼的露營奇遇記
+                  </h5>
+                  <p class="card-text">
+                    遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                  </p>
+                  <div class="card-btn">
+                    <a href="#" class="btn">
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card article-card">
+                <img
+                  src="/week6-vivre/assets/articles-2-05d8b79f.png"
+                  class="card-img-top img-fluid"
+                  alt="article-image">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    窺探米其林三星主廚的絕密手藝
+                  </h5>
+                  <p class="card-text">
+                    在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                  </p>
+                  <div class="card-btn">
+                    <a href="#" class="btn">
+                      Read More
+                    </a>
+                    <span class="tag-primary">會員專屬</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card article-card">
+                <img
+                  src="/week6-vivre/assets/articles-1-ebc46e31.png"
+                  class="card-img-top img-fluid"
+                  alt="article-image">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    窺探米其林三星主廚的絕密手藝
+                  </h5>
+                  <p class="card-text">
+                    在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                  </p>
+                  <div class="card-btn">
+                    <a href="#" class="btn">
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card article-card">
+                <img
+                  src="/week6-vivre/assets/articles-2-05d8b79f.png"
+                  class="card-img-top img-fluid"
+                  alt="article-image">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    窺探米其林三星主廚的絕密手藝
+                  </h5>
+                  <p class="card-text">
+                    在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                  </p>
+                  <div class="card-btn">
+                    <a href="#" class="btn">
+                      Read More
+                    </a>
+                    <span class="tag-primary">會員專屬</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card article-card">
+                <img
+                  src="/week6-vivre/assets/articles-1-ebc46e31.png"
+                  class="card-img-top img-fluid"
+                  alt="article-image">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    窺探米其林三星主廚的絕密手藝
+                  </h5>
+                  <p class="card-text">
+                    在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                  </p>
+                  <div class="card-btn">
+                    <a href="#" class="btn">
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-btn position-absolute">
+            <div class="swiper-article-pagination text-start position-relative"></div>
+            <div class="swiper-switch-btn mt-8">
+              <div class="swiper-article-button-prev">
+                <i class="bi bi-arrow-left"></i>
+              </div>
+              <div>
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAABCAYAAABJwyn/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAcSURBVHgB7cCxAQAADAGw9l+r0e38YJYH5ZtaAPJ0Al8BmjezAAAAAElFTkSuQmCC"
+                  alt="line" style="width: 80px;">
+              </div>
+              <div class="swiper-article-button-next">
+                <i class="bi bi-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="index-event-section wrap">
+      <div class="container d-flex flex-column align-items-center">
+        <h4>\ 母親節強檔活動 /</h4>
+        <h2 class="mt-5">家庭訂閱方案限時 7 折</h2>
+        <ul class="px-0 mt-5">
+          <li>
+            <i class="bi bi-check"></i>
+            <p>每月最新文章無限閱讀</p>
+          </li>
+          <li>
+            <i class="bi bi-check"></i>
+            <p>專屬會員限定內容</p>
+          </li>
+          <li>
+            <i class="bi bi-check"></i>
+            <p>定期電子報</p>
+          </li>
+          <li>
+            <i class="bi bi-check"></i>
+            <p>年度精選禮物</p>
+          </li>
+          <li>
+            <i class="bi bi-check"></i>
+            <p>24 /7 優先客戶服務</p>
+          </li>
+          <li>
+            <i class="bi bi-check"></i>
+            <p>為每個成員量身打造專屬行程</p>
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="btn btn-accent text-white fs-5 d-flex align-items-center mt-6">
+          我想了解
+        </button>
+      </div>
+    </section>
+    <section class="index-hot-section wrap">
+      <div class="container">
+        <div class="row">
+          <h2>大家都在看</h2>
+          <div class="col-lg-3 mt-lg-10">
+            <ul class="list-group hot-list-group p-4" id="hotTab" role="tablist">
+              <a
+                href="#hot-1-tab"
+                class="list-group-item list-group-item-action border-0 fs-5 fw-bolder active"
+                aria-current="true"
+                id="hot-1-tab" data-bs-toggle="tab"
+                data-bs-target="#hot-1" role="tab"
+                aria-controls="hot-1" aria-selected="true"
+                >
+                <li role="presentation">酒精路跑地圖</li>
+              </a>
+              <a
+                href="#hot-2-tab"
+                class="list-group-item list-group-item-action border-0 fs-5 fw-bolder mt-4"
+                id="hot-2-tab" data-bs-toggle="tab"
+                data-bs-target="#hot-2" role="tab"
+                aria-controls="hot-2" aria-selected="false"
+                >
+                <li role="presentation">台北拉麵圖鑑</li>
+              </a>
+              <a
+                href="#hot-3-tab"
+                class="list-group-item list-group-item-action border-0 fs-5 fw-bolder mt-4"
+                id="hot-3-tab" data-bs-toggle="tab"
+                data-bs-target="#hot-3" role="tab"
+                aria-controls="hot-3" aria-selected="false"
+                >
+                <li role="presentation">海島自由行</li>
+              </a>
+              <a
+                href="#hot-4-tab"
+                class="list-group-item list-group-item-action border-0 fs-5 fw-bolder mt-4"
+                id="hot-4-tab" data-bs-toggle="tab"
+                data-bs-target="#hot-4" role="tab"
+                aria-controls="hot-4" aria-selected="false"
+                >
+                <li>短天數出國推薦</li>
+              </a>
+              <a
+                href="#hot-5-tab"
+                class="list-group-item list-group-item-action border-0 fs-5 fw-bolder mt-4"
+                id="hot-5-tab" data-bs-toggle="tab"
+                data-bs-target="#hot-5" role="tab"
+                aria-controls="hot-5" aria-selected="false"
+                >
+                <li>週末露營趣</li>
+              </a>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-lg-10">
+            <div class="card tab-content" id="hotTabContent">
+              <div
+                class="card-body p-lg-10 tab-pane fade show active"
+                id="hot-1" role="tabpanel"
+                aria-labelledby="hot-1-tab">
+                <h5 class="card-title fs-4 text-accent p-lg-6 mb-0">
+                  酒精路跑地圖
+                </h5>
+                <ul class="card-text px-lg-6 pb-lg-6">
+                  <li>
+                    <h6 class="fw-bold">
+                      ｜城市酒吧人氣榜,盤點當紅熱門酒吧
+                    </h6>
+                  </li>
+                  <li class="mt-lg-5">
+                    <h6 class="fw-bold">
+                      ｜你要的調酒師在這裡！五月全台酒吧客座活動整理
+                    </h6>
+                  </li>
+                  <li class="mt-lg-5">
+                    <h6 class="fw-bold">
+                      ｜台南老宅手工酒藏,尋味百年人文釀意
+                    </h6>
+                  </li>
+                </ul>
+                <div class="card-group rounded rounded-3 overflow-hidden mx-lg-4">
+                  <div class="card">
+                    <img src="/week6-vivre/assets/hots-1-4140643e.png" class="card-img-top h-100" alt="...">
+                  </div>
+                  <div class="card">
+                    <img src="/week6-vivre/assets/hots-2-0511cb4f.png" class="card-img-top h-100" alt="...">
+                  </div>
+                  <div class="card">
+                    <img src="/week6-vivre/assets/hots-3-1a547610.png" class="card-img-top h-100" alt="...">
+                  </div>
+                  <div class="card">
+                    <img src="/week6-vivre/assets/hots-4-ec19ac92.png" class="card-img-top h-100" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-lg-6 mt-lg-4">
+                  <ul class="d-flex mb-0 p-0">
+                    <li class="py-2">
+                      <span class="tag-primary">#夜貓行程</span>
+                    </li>
+                    <li class="ms-4 py-2">
+                      <span class="tag-primary">#barhopping</span>
+                    </li>
+                    <li class="ms-4 py-2">
+                      <span class="tag-primary">#全台酒吧</span>
+                    </li>
+                  </ul>
+                  <div>
+                    <a href="#" class="fs-5 text-accent fw-bold link-hover">
+                      View More
+                      <i
+                        class="bi bi-arrow-right ms-3"
+                        style="width: 24px; height: 24px;">
+                      </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card-body p-lg-10 tab-pane fade"
+                id="hot-2" role="tabpanel"
+                aria-labelledby="hot-2-tab">
+                <h5 class="card-title fs-4 text-accent p-lg-6 mb-0">
+                  台北拉麵圖鑑
+                </h5>
+                <ul class="card-text px-lg-6 pb-lg-6">
+                  <li>
+                    <h6 class="fw-bold">
+                      ｜城市酒吧人氣榜,盤點當紅熱門酒吧
+                    </h6>
+                  </li>
+                  <li class="mt-lg-5">
+                    <h6 class="fw-bold">
+                      ｜你要的調酒師在這裡！五月全台酒吧客座活動整理
+                    </h6>
+                  </li>
+                  <li class="mt-lg-5">
+                    <h6 class="fw-bold">
+                      ｜台南老宅手工酒藏,尋味百年人文釀意
+                    </h6>
+                  </li>
+                </ul>
+                <div class="card-group rounded rounded-3 overflow-hidden mx-lg-4">
+                  <div class="card">
+                    <img src="/week6-vivre/assets/hots-1-4140643e.png" class="card-img-top h-100" alt="...">
+                  </div>
+                  <div class="card">
+                    <img src="/week6-vivre/assets/hots-2-0511cb4f.png" class="card-img-top h-100" alt="...">
+                  </div>
+                  <div class="card">
+                    <img src="/week6-vivre/assets/hots-3-1a547610.png" class="card-img-top h-100" alt="...">
+                  </div>
+                  <div class="card">
+                    <img src="/week6-vivre/assets/hots-4-ec19ac92.png" class="card-img-top h-100" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-lg-6 mt-lg-4">
+                  <ul class="d-flex mb-0 p-0">
+                    <li class="py-2">
+                      <span class="tag-primary">#雞白湯</span>
+                    </li>
+                    <li class="ms-4 py-2">
+                      <span class="tag-primary">#拉麵</span>
+                    </li>
+                    <li class="ms-4 py-2">
+                      <span class="tag-primary">#台灣美食</span>
+                    </li>
+                  </ul>
+                  <div>
+                    <a href="#" class="fs-5 text-accent fw-bold link-hover">
+                      View More
+                      <i
+                        class="bi bi-arrow-right ms-3"
+                        style="width: 24px; height: 24px;">
+                      </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card-body p-lg-10 tab-pane fade"
+                id="hot-3" role="tabpanel"
+                aria-labelledby="hot-3-tab">
+                <h5 class="card-title fs-4 text-accent p-lg-6 mb-0">
+                  海島自由行
+                </h5>
+                <ul class="card-text px-lg-6 pb-lg-6">
+                  <li>
+                    <h6 class="fw-bold">
+                      ｜私島慢活島嶼生活 - 在熱帶天堂品...
+                    </h6>
+                  </li>
+                  <li class="mt-lg-5">
+                    <h6 class="fw-bold">
+                      ｜海島漂流記 - 在陽光、沙灘和比基...
+                    </h6>
+                  </li>
+                  <li class="mt-lg-5">
+                    <h6 class="fw-bold">
+                      ｜島嶼蹤跡 - 揭開加勒比海上世外桃...
+                    </h6>
+                  </li>
+                </ul>
+                <div class="card-group rounded rounded-3 overflow-hidden mx-lg-4">
+                  <div class="card">
+                    <img src="/week6-vivre/assets/hots-1-4140643e.png" class="card-img-top h-100" alt="...">
+                  </div>
+                  <div class="card">
+                    <img src="/week6-vivre/assets/hots-2-0511cb4f.png" class="card-img-top h-100" alt="...">
+                  </div>
+                  <div class="card">
+                    <img src="/week6-vivre/assets/hots-3-1a547610.png" class="card-img-top h-100" alt="...">
+                  </div>
+                  <div class="card">
+                    <img src="/week6-vivre/assets/hots-4-ec19ac92.png" class="card-img-top h-100" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-lg-6 mt-lg-4">
+                  <ul class="d-flex mb-0 p-0">
+                    <li class="py-2">
+                      <span class="tag-primary">#熱帶國家</span>
+                    </li>
+                    <li class="ms-4 py-2">
+                      <span class="tag-primary">#海邊</span>
+                    </li>
+                    <li class="ms-4 py-2">
+                      <span class="tag-primary">#無敵海景</span>
+                    </li>
+                  </ul>
+                  <div>
+                    <a href="#" class="fs-5 text-accent fw-bold link-hover">
+                      View More
+                      <i
+                        class="bi bi-arrow-right ms-3"
+                        style="width: 24px; height: 24px;">
+                      </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card-body p-lg-10 tab-pane fade"
+                id="hot-4" role="tabpanel"
+                aria-labelledby="hot-4-tab">
+                <h5 class="card-title fs-4 text-accent p-lg-6 mb-0">
+                  短天數出國推薦
+                </h5>
+                <ul class="card-text px-lg-6 pb-lg-6">
+                  <li>
+                    <h6 class="fw-bold">
+                      ｜72小時東京遊走 - 當個時尚東京通
+                    </h6>
+                  </li>
+                  <li class="mt-lg-5">
+                    <h6 class="fw-bold">
+                      ｜48小時曼谷遊玩全攻略
+                    </h6>
+                  </li>
+                  <li class="mt-lg-5">
+                    <h6 class="fw-bold">
+                      ｜三天兩夜賞櫻微醺東京
+                    </h6>
+                  </li>
+                </ul>
+                <div class="card-group rounded rounded-3 overflow-hidden mx-lg-4">
+                  <div class="card">
+                    <img src="/week6-vivre/assets/hots-1-4140643e.png" class="card-img-top h-100" alt="...">
+                  </div>
+                  <div class="card">
+                    <img src="/week6-vivre/assets/hots-2-0511cb4f.png" class="card-img-top h-100" alt="...">
+                  </div>
+                  <div class="card">
+                    <img src="/week6-vivre/assets/hots-3-1a547610.png" class="card-img-top h-100" alt="...">
+                  </div>
+                  <div class="card">
+                    <img src="/week6-vivre/assets/hots-4-ec19ac92.png" class="card-img-top h-100" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-lg-6 mt-lg-4">
+                  <ul class="d-flex mb-0 p-0">
+                    <li class="py-2">
+                      <span class="tag-primary">#說走就走</span>
+                    </li>
+                    <li class="ms-4 py-2">
+                      <span class="tag-primary">#出國玩</span>
+                    </li>
+                    <li class="ms-4 py-2">
+                      <span class="tag-primary">#東亞</span>
+                    </li>
+                  </ul>
+                  <div>
+                    <a href="#" class="fs-5 text-accent fw-bold link-hover">
+                      View More
+                      <i
+                        class="bi bi-arrow-right ms-3"
+                        style="width: 24px; height: 24px;">
+                      </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card-body p-lg-10 tab-pane fade"
+                id="hot-5" role="tabpanel"
+                aria-labelledby="hot-5-tab">
+                <h5 class="card-title fs-4 text-accent p-lg-6 mb-0">
+                  週末露營趣
+                </h5>
+                <ul class="card-text px-lg-6 pb-lg-6">
+                  <li>
+                    <h6 class="fw-bold">
+                      ｜週末說走就走露營記
+                    </h6>
+                  </li>
+                  <li class="mt-lg-5">
+                    <h6 class="fw-bold">
+                      ｜城市野營日記
+                    </h6>
+                  </li>
+                  <li class="mt-lg-5">
+                    <h6 class="fw-bold">
+                      ｜和寵物去露營 - 大自然之旅的雙倍...
+                    </h6>
+                  </li>
+                </ul>
+                <div class="card-group rounded rounded-3 overflow-hidden mx-lg-4">
+                  <div class="card">
+                    <img src="/week6-vivre/assets/hots-1-4140643e.png" class="card-img-top h-100" alt="...">
+                  </div>
+                  <div class="card">
+                    <img src="/week6-vivre/assets/hots-2-0511cb4f.png" class="card-img-top h-100" alt="...">
+                  </div>
+                  <div class="card">
+                    <img src="/week6-vivre/assets/hots-3-1a547610.png" class="card-img-top h-100" alt="...">
+                  </div>
+                  <div class="card">
+                    <img src="/week6-vivre/assets/hots-4-ec19ac92.png" class="card-img-top h-100" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center p-lg-6 mt-lg-4">
+                  <ul class="d-flex mb-0 p-0">
+                    <li class="py-2">
+                      <span class="tag-primary">#戶外</span>
+                    </li>
+                    <li class="ms-4 py-2">
+                      <span class="tag-primary">#露營控</span>
+                    </li>
+                    <li class="ms-4 py-2">
+                      <span class="tag-primary">#凹豆</span>
+                    </li>
+                  </ul>
+                  <div>
+                    <a href="#" class="fs-5 text-accent fw-bold link-hover">
+                      View More
+                      <i
+                        class="bi bi-arrow-right ms-3"
+                        style="width: 24px; height: 24px;">
+                      </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="index-life-section wrap">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h2>品味生活</h2>
+          <div class="swiper-switch-btn">
+            <div class="swiper-life-button-prev">
+              <i class="bi bi-arrow-left"></i>
+            </div>
+            <div>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAABCAYAAABJwyn/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAcSURBVHgB7cCxAQAADAGw9l+r0e38YJYH5ZtaAPJ0Al8BmjezAAAAAElFTkSuQmCC"
+                alt="line" style="width: 80px;">
+            </div>
+            <div class="swiper-life-button-next">
+              <i class="bi bi-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-lg-10">
+          <div class="col">
+            <div class="swiper myLifeSwiper h-100 px-0">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide card life-card">
+                  <h4 class="display-5">食.</h4>
+                  <img
+                    src="/week6-vivre/assets/life-1-dc3e4076.png"
+                    class="card-img-top img-fluid mt-lg-9"
+                    alt="article-image">
+                  <div class="card-body">
+                    <ul class="card-text px-0 my-lg-9">
+                      <li>
+                        <h5 class="fw-bolder">
+                          ｜米其林三星主廚的那些絕活傳奇
+                        </h5>
+                      </li>
+                      <li class="mt-lg-5">
+                        <h5 class="fw-bolder">
+                          ｜探秘成都的地道川味秘技與魅力
+                        </h5>
+                      </li>
+                      <li class="mt-lg-5">
+                        <h5 class="fw-bolder">
+                          ｜義大利釀酒師對於酒的堅持執著
+                        </h5>
+                      </li>
+                    </ul>
+                    <div class="card-btn">
+                      <a href="#" class="fs-5 text-accent fw-bold link-hover">
+                        View More
+                        <i
+                          class="bi bi-arrow-right ms-3"
+                          style="width: 24px; height: 24px;">
+                        </i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card life-card">
+                  <h4 class="display-5">藝.</h4>
+                  <img
+                    src="/week6-vivre/assets/life-2-e0514e49.png"
+                    class="card-img-top img-fluid mt-lg-9"
+                    alt="article-image">
+                  <div class="card-body">
+                    <ul class="card-text px-0 my-lg-9">
+                      <li>
+                        <h5 class="fw-bolder">
+                          ｜解構教主級時裝設計大師的獨特美學
+                        </h5>
+                      </li>
+                      <li class="mt-lg-5">
+                        <h5 class="fw-bolder">
+                          ｜當代攝影師鏡頭中的光影離奇
+                        </h5>
+                      </li>
+                      <li class="mt-lg-5">
+                        <h5 class="fw-bolder">
+                          ｜帶你穿縮中世紀，夏季文藝復興展
+                        </h5>
+                      </li>
+                    </ul>
+                    <div class="card-btn">
+                      <a href="#" class="fs-5 text-accent fw-bold link-hover">
+                        View More
+                        <i
+                          class="bi bi-arrow-right ms-3"
+                          style="width: 24px; height: 24px;">
+                        </i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card life-card">
+                  <h4 class="display-5">旅.</h4>
+                  <img
+                    src="/week6-vivre/assets/life-3-5b7bb55a.png"
+                    class="card-img-top img-fluid mt-lg-9"
+                    alt="article-image">
+                  <div class="card-body">
+                    <ul class="card-text px-0 my-lg-9">
+                      <li>
+                        <h5 class="fw-bolder">
+                          ｜遠離喧囂,偶探巴塔哥尼亞終界
+                        </h5>
+                      </li>
+                      <li class="mt-lg-5">
+                        <h5 class="fw-bolder">
+                          ｜東京深度六區,帶你細品極簡魅力
+                        </h5>
+                      </li>
+                      <li class="mt-lg-5">
+                        <h5 class="fw-bolder">
+                          ｜專賣奇珍異寶的東歐地下夜市
+                        </h5>
+                      </li>
+                    </ul>
+                    <div class="card-btn">
+                      <a href="#" class="fs-5 text-accent fw-bold link-hover">
+                        View More
+                        <i
+                          class="bi bi-arrow-right ms-3"
+                          style="width: 24px; height: 24px;">
+                        </i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="index-project-section wrap">
+      <div class="container">
+        <div class="row pt-lg-4">
+          <div class="col-lg-6">
+            <div class="h-100 d-flex flex-column justify-content-center">
+              <h5>今天又不知道要去哪裡了嗎？</h5>
+              <h2 class="mt-3">Vivre 給你意想不到的生活風格提案</h2>
+              <div>
+                <button type="button" class="btn btn-accent text-white fs-5 d-flex align-items-center mt-6">
+                  馬上訂閱
+                  <i class="bi bi-arrow-right ms-3"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <a href="#">
+              <div class="card text-white project-card position-relative mt-lg-12">
+                <img
+                  src="/week6-vivre/assets/projects-2-28f2afc5.png"
+                  class="card-img rounded"
+                  alt="theme-image">
+                <div class="porject-overlay">
+                  <h6 class="text-white fw-bold">親子露營要帶什麼？</h6>
+                  <i class="bi bi-arrow-right ms-auto"></i>
+                </div>
+                <div class="project-tag position-absolute top-0 start-0 translate-middle tag-secondary">
+                  <i class="bi bi-play-fill"></i>
+                  <span>人氣行程</span>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="card text-white project-card position-relative mt-lg-10">
+                <img
+                  src="/week6-vivre/assets/projects-4-c31b35a0.png"
+                  class="card-img rounded"
+                  alt="theme-image">
+                <div class="porject-overlay">
+                  <h6 class="text-white fw-bold">質感房間改造攻略！</h6>
+                  <i class="bi bi-arrow-right ms-auto"></i>
+                </div>
+                <div class="project-tag position-absolute top-0 start-0 translate-middle tag-secondary">
+                  <i class="bi bi-play-fill"></i>
+                  <span>編輯推薦</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3">
+            <a href="#">
+              <div class="card text-white project-card position-relative">
+                <img
+                  src="/week6-vivre/assets/projects-1-1192f106.png"
+                  class="card-img rounded"
+                  alt="theme-image">
+                <div class="porject-overlay">
+                  <h6 class="text-white fw-bold">山女孩的健行筆記</h6>
+                  <i class="bi bi-arrow-right ms-auto"></i>
+                </div>
+                <div class="project-tag position-absolute top-0 start-0 translate-middle tag-secondary">
+                  <i class="bi bi-play-fill"></i>
+                  <span>編輯推薦</span>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="card text-white project-card position-relative mt-lg-10">
+                <img
+                  src="/week6-vivre/assets/projects-3-6cd4e17c.png"
+                  class="card-img rounded"
+                  alt="theme-image">
+                <div class="porject-overlay">
+                  <h6 class="text-white fw-bold">適合溜小孩的海邊景點推薦</h6>
+                  <i class="bi bi-arrow-right ms-auto"></i>
+                </div>
+                <div class="project-tag position-absolute top-0 start-0 translate-middle tag-secondary">
+                  <i class="bi bi-play-fill"></i>
+                  <span>熱門文章</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="layout-footer-wrap">
+  <div class="container wrap">
+    <div class="d-flex justify-content-between">
+      <h2>想看什麼主題由你決定！</h2>
+      <div>
+        <h5>歡迎投稿與我們分享</h5>
+        <button type="button" class="btn btn-accent text-white fs-5 d-flex align-items-center mt-lg-4 ms-auto">
+          聯絡我們
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="container px-0">
+    <div class="text-center border-top py-lg-6">
+      <p>©Vivre 2024 All right Reserved</p>
+    </div>
+  </div>
+</footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 48,
+        loop: true,
+
+        pagination: {
+          el: ".swiper-article-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-article-button-next",
+          prevEl: ".swiper-article-button-prev",
+        },
+      });
+      var swiper = new Swiper(".myLifeSwiper", {
+        slidesPerView: 3,
+        spaceBetween: 24,
+        simulateTouch: false,
+        allowTouchMove: false
+      });
+    </script>
   </body>
 </html>
