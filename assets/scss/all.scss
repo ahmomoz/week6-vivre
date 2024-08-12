@@ -1,10 +1,15 @@
-@import "../node_modules/bootstrap/scss/functions";
+@import "bootstrap/scss/functions";
 @import "./utils/variables";
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap";
 
 @import './base/base.scss';
 @import './layout/header.scss';
 
-@import './pages/index.scss';
-@import './pages/admin.scss';
+@import './vendors/swiper.scss';
 
+@import './pages/index.scss';
+@import './components/tag.scss';
+@import './components/theme-card.scss';
+@import './components/article-card.scss';
+@import './components/life-card.scss';
+@import './components/project-card.scss';

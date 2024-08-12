@@ -1,0 +1,52 @@
+.index-banner-section {
+  .bg {
+    background-image: url('/assets/images/banner.png');
+    height: 621px;
+  }
+}
+.index-event-section {
+  background-color: $primary-200;
+
+  i {
+    margin-right: 12px;
+  }
+  li {
+    display: flex;
+    margin-top: 16px;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .container::before {
+    content: '';
+    position: absolute;
+    width: 217px;
+    height: 81px;
+    background-image: url(/assets/images/bg-1.png);
+    left: 0; bottom: -80px;
+  }
+
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 196px;
+    background-image: url(/assets/images/bg-2.png);
+    right: -20px; bottom: -80px;
+  }
+}
+
+.hot-list-group {
+  li {
+    list-style: disc;
+  }
+}
+
+.index-project-section {
+  background-color: $primary-200;
+}
+.project-tag {
+  margin-left: 70px;
+}

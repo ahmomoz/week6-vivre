@@ -1,0 +1,33 @@
+.swiper-btn {
+  bottom: 0;
+  left: 0;
+}
+.swiper-pagination-current {
+  margin-right: 10px;
+}
+.swiper-pagination-total {
+  margin-left: 10px;
+}
+.swiper-switch-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.swiper-article-button-prev,
+.swiper-article-button-next,
+.swiper-life-button-prev,
+.swiper-life-button-next {
+  width: 56px;
+  height: 32px;
+  border: 1px solid #6C757D;
+  border-radius: 100px;
+  text-align: center;
+
+  i {
+    color: #6C757D;
+  }
+
+  &:hover {
+    background-color: $accent-100;
+  }
+}

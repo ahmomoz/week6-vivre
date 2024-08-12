@@ -1,4 +1,52 @@
-<h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light">
+  <div class="container h-100 border-bottom">
+    <a class="navbar-brand p-0" href="#">
+      <img
+        src="/assets/images/logo.png"
+        alt="logo-image"
+        style="width: 96px; height: 28px;">
+    </a>
+    <button
+      class="navbar-toggler" type="button"
+      data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="d-flex align-items-center justify-content-end">
+        <input
+          class="form-control rounded-pill position-reative ms-8"
+          type="search" placeholder="搜尋文章"
+          aria-label="Search" style="width: 276px;">
+        <i
+          class="icofont-search position-absolute text-accent d-flex align-items-center"
+          style="width: 24px; height: 24px; margin-right: 14px;">
+        </i>
+      </form>
+      <ul class="navbar-nav fw-bold align-items-center ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            所有文章
+          </a>
+        </li>
+        <li class="nav-item ms-5">
+          <a class="nav-link" href="#">
+            訂閱方案
+          </a>
+        </li>
+        <li class="nav-item ms-5">
+          <a class="nav-link" href="#">
+            關於我們
+          </a>
+        </li>
+        <li class="ms-5">
+          <button type="button" class="btn btn-accent text-white">
+            登入 / 註冊
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

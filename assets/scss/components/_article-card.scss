@@ -1,0 +1,26 @@
+.article-card {
+  height: 432px;
+  border-bottom: 1px solid $gray-500;
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .card-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+  }
+  .btn {
+    color: $accent-200;
+    padding: 0;
+    border: 0;
+
+    &:hover {
+      color: $accent-300;
+    }
+  }
+}
