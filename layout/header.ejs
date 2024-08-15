@@ -1,5 +1,5 @@
-<nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light">
-  <div class="container h-100 border-bottom">
+<nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light p-0">
+  <div class="container-md border-bottom px-3 px-md-0 py-4 py-md-9">
     <a class="navbar-brand p-0" href="#">
       <img
         src="/assets/images/logo.png"
@@ -7,42 +7,50 @@
         style="width: 96px; height: 28px;">
     </a>
     <button
-      class="navbar-toggler" type="button"
-      data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      class="navbar-toggler border-0 collapsed" type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent"
       aria-expanded="false"
       aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <button
+      type="button"
+      class="btn-close collapse"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Close"
+      id="navbarSupportedContent">
+    </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <form class="d-flex align-items-center justify-content-end">
+      <form class="d-flex flex-column flex-md-row align-items-md-center justify-content-md-end">
         <input
-          class="form-control rounded-pill position-reative ms-8"
+          class="form-control rounded-pill position-reative w-100 mt-6 mt-lg-0 ms-lg-8"
           type="search" placeholder="搜尋文章"
           aria-label="Search" style="width: 276px;">
-        <i
-          class="icofont-search position-absolute text-accent d-flex align-items-center"
-          style="width: 24px; height: 24px; margin-right: 14px;">
-        </i>
+        <i class="icofont-search position-absolute text-accent d-flex align-items-center"></i>
       </form>
-      <ul class="navbar-nav fw-bold align-items-center ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">
+      <ul class="navbar-nav fw-bold align-items-lg-center ms-lg-auto">
+        <li class="nav-item p-3 p-lg-0 mt-6 mt-lg-0">
+          <a class="nav-link p-0" href="#">
             所有文章
           </a>
         </li>
-        <li class="nav-item ms-5">
-          <a class="nav-link" href="#">
+        <li class="nav-item p-3 p-lg-0 mt-6 mt-lg-0 ms-lg-5">
+          <a class="nav-link p-0" href="#">
             訂閱方案
           </a>
         </li>
-        <li class="nav-item ms-5">
-          <a class="nav-link" href="#">
+        <li class="nav-item p-3 p-lg-0 mt-6 mt-lg-0 ms-lg-5">
+          <a class="nav-link p-0" href="#">
             關於我們
           </a>
         </li>
-        <li class="ms-5">
-          <button type="button" class="btn btn-accent text-white">
+        <li class="mt-10 mt-lg-0 ms-lg-5">
+          <button type="button" class="btn btn-accent text-white fs-6 lh-sm w-100">
             登入 / 註冊
           </button>
         </li>

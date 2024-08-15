@@ -1,3 +1,13 @@
 .layout-nav-wrap {
-  height: 140px;
+  i {
+    width: 24px;
+    height: 24px;
+    margin-right: 14px;
+
+    @include pad {
+      right: 0;
+      margin-right: 20px;
+      margin-top: 36px;
+    }
+  }
 }

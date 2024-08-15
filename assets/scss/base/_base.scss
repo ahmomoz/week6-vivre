@@ -1,15 +1,19 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-button {
-  letter-spacing: 0.1em;
+@mixin lg-pc {
+  @media(max-width: 1200px){
+    @content;
+  }
 }
-p {
-  letter-spacing: 0.05em;
+@mixin pad {
+  @media(max-width: 768px){
+    @content;
+  }
 }
+@mixin mobile {
+  @media(max-width: 576px){
+    @content;
+  }
+}
+
 li {
   list-style: none;
 }
@@ -29,6 +33,10 @@ input[type="search"]::-moz-search-clear-button {
 
 .wrap {
   padding: 80px 0;
+  
+  @include pad {
+    padding: 48px 0;
+  }
 }
 .bg {
   background-repeat: no-repeat;

@@ -1,0 +1,27 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  letter-spacing: 0.1em;
+}
+p {
+  letter-spacing: 0.05em;
+}
+
+h4,
+h5 {
+  @include pad {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+.btn {
+  font-size: 20px;
+
+  @include pad {
+    font-size: 16px;
+  }
+}

@@ -1,6 +1,13 @@
 .article-card {
   height: 432px;
   border-bottom: 1px solid $gray-500;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  
+  h5 {
+    font-size: 20px;
+    font-weight: 900;
+  }
 
   .card-body {
     display: flex;
