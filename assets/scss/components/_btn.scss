@@ -1,0 +1,17 @@
+.btn-accent {
+  color: $white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  
+  &:hover {
+    color: $white;
+    background-color: $accent-300;
+    border-color: $accent-300;
+  }
+
+  @include pad {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}

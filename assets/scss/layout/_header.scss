@@ -10,4 +10,40 @@
       margin-top: 36px;
     }
   }
+
+  .navbar-collapse {
+    @include pad {
+      min-height: 100vh;
+    }
+  }
+
+  .navbar-collapse.collapsing {
+    transition: transform .5s ease-in-out, height .5s ease-in-out;
+  }
+  
+  .navbar-toggler {
+    @include lg-pc {
+      display: block;
+    }
+  }
+  
+  .btn-close {
+    padding: 18px;
+    
+    @include lg-pc {
+      display: none;
+    }
+  }
+  
+  .navbar-toggler[aria-expanded="true"] {
+    @include lg-pc {
+      display: none;
+    }
+  }
+  
+  .btn-close[aria-expanded="true"] {
+    @include lg-pc {
+      display: block;
+    }
+  }
 }

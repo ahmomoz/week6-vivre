@@ -60,8 +60,3 @@ input[type="search"]::-moz-search-clear-button {
 .link-hover:hover::after {
   background-color: currentColor;
 }
-
-.btn-accent:hover {
-  background-color: $accent-300;
-  border-color: $accent-300;
-}

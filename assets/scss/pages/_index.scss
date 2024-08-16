@@ -141,9 +141,32 @@
   }
 }
 
+/* index-life-section */
+.index-life-section {
+  h6 {
+    font-size: 20px;
+  }
+  .display-5 {
+    @include pad {
+      font-size: 40px;
+    }
+  }
+}
+
 /* index-project-section */
 .index-project-section {
   background-color: $primary-200;
+
+  h5 {
+    color: $gray-400;
+  }
+}
+.project-section-title {
+  span {
+    @include lg-pc {
+      text-align: center;
+    }
+  }
 }
 .project-tag {
   margin-left: 70px;

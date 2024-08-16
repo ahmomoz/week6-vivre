@@ -1,5 +1,51 @@
+.project-card-wrap {
+  display: flex;
+
+  @include lg-pc {
+    flex-wrap: wrap;
+  }
+
+  @include pad {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      height: 0;
+    }
+  }
+}
+
+.project-card-group {
+  display: block;
+  margin-top: 0;
+
+  &:nth-child(2) {
+    margin-left: 24px;
+
+    @include lg-pc {
+      margin-left: 0;
+    }
+
+    @include pad {
+      margin-left: 24px;
+    }
+  }
+
+  @include lg-pc {
+    display: flex;
+    margin-top: 65px;
+  }
+}
+
 .project-card {
   position: relative;
+  color: $white;
+
+  @include pad {
+    width: 306px;
+  }
 
   &::before {
     content: '';
@@ -23,6 +69,5 @@
     padding: 12px;
     bottom: 0;
     background: linear-gradient(359.16deg, #212529 0.73%, rgba(33, 37, 41, 0.05) 99.27%);
-
   }
 }
