@@ -1,0 +1,36 @@
+/* subscription-section */
+.subscription-section {
+  h1 {
+    @include pad {
+      font-size: 28px;
+    }
+  }
+
+  .nav-tabs {
+    gap: 24px;
+    margin-top: 60px;
+
+    @include pad {
+      flex-wrap: nowrap;
+      gap: 0;
+      margin-top: 40px;             
+    }
+  }
+
+  .nav-link {
+    color: $gray-400;
+    border: 0;
+    border-radius: 0;
+    width: 196px;
+    padding: 12px 20px;
+
+    &:hover {
+      background-color: $accent-200;
+      color: $white;
+    }
+
+    @include pad {
+      width: 175px;          
+    }
+  }
+}

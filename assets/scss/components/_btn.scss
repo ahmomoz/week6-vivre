@@ -1,18 +1,31 @@
-.btn-accent {
-  color: $white;
-  font-size: 20px;
+.btn {
+  font-weight: 900;
   display: flex;
   align-items: center;
   border: 0;
-  
+
+  @include pad {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 20px;
+  }
+}
+.btn-accent {
+  color: $white;
+
   &:hover {
     color: $white;
     background-color: $accent-300;
     border-color: $accent-300;
   }
+}
+.btn-gray {
+  color: $gray-400;
+  background-color: $gray-100;
 
-  @include pad {
-    font-size: 16px;
-    font-weight: 700;
+  &:hover {
+    color: $white;
+    background-color: $accent-300;
+    border-color: $accent-300;
   }
 }

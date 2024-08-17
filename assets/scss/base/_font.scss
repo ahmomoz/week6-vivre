@@ -19,6 +19,16 @@ h6 {
     font-weight: 700;
   }
 }
+
+i {
+  font-size: 24px;
+  line-height: 1;
+
+  @include pad {
+    font-size: 20px;
+  }
+}
+
 .btn {
   font-size: 20px;
 
@@ -26,6 +36,7 @@ h6 {
     font-size: 16px;
   }
 }
+
 time {
   h6 {
     color: $gray-300;
@@ -40,8 +51,12 @@ time {
     }
   }
 }
+
 .breadcrumb-item {
   @include pad {
     font-size: 14px;
   }
+}
+.newsreader {
+  font-family: Newsreader;
 }

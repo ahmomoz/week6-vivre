@@ -1,12 +1,14 @@
 .layout-nav-wrap {
   i {
-    width: 24px;
-    height: 24px;
-    margin-right: 14px;
+    margin-right: 20px;
+
+    @include lg-pc {
+      margin-top: 24px;
+    }
 
     @include pad {
       right: 0;
-      margin-right: 20px;
+      margin-right: 24px;
       margin-top: 36px;
     }
   }

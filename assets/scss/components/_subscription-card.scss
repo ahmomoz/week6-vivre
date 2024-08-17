@@ -1,0 +1,91 @@
+.subscription-card {
+  height: 100%;
+  border-radius: 12px;
+  background-color: $white;
+  border: 1px solid #E8E3DA;
+  padding: 40px;
+  margin-top: 40px;
+
+  @include pad {
+    padding: 24px;
+    margin-top: 24px;
+  }
+
+  h4, h5, p, span, li > i {
+    color: $gray-400;
+
+    @include pad {
+      color: #52525B;
+    }
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.2;
+
+    @include pad {
+      font-size: 16px;
+    }
+  }
+  
+}
+.subscription-card > .card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  ul {
+    text-align: center;
+    padding-top: 60px;
+
+    @include pad {
+      padding: 36px 0;
+      margin-bottom: 0;
+    }
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+  }
+}
+.subscription-card > .card-body > .card-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+  margin-bottom: 0;
+
+  @include pad {
+    padding-bottom: 0px;
+  }
+  
+  span {
+    font-size: 40px;
+
+    @include pad {
+      font-size: 32px;
+    }
+  }
+}
+.subscription-active-card {
+  border: 2px solid $accent-200;
+
+  h4, .price-delete {
+    color: $gray-300;
+  }
+
+  .price-delete {
+    font-size: 22px;
+    line-height: 24px;
+
+    @include pad {
+      font-size: 20px;
+    }
+  }
+}
+.list-styled > li {
+  p, i {
+    color: $gray-500;
+  }
+}
