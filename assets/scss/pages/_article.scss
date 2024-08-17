@@ -1,0 +1,36 @@
+/* common */
+picture {
+  display: block;
+}
+
+/* article-banner-section */
+.article-banner-section {
+  picture {
+    height: 454px;
+
+    @include pad{
+      height: 240px;
+    }
+  }
+}
+
+/* article-read-section */
+.article-read-section {
+  margin-top: 100px;
+
+  @include pad {
+    margin-top: 60px;
+  }
+
+  h1 {
+    @include pad {
+      font-size: 24px;
+    }
+  }
+
+  h5 {
+    @include pad {
+      font-size: 20px;
+    }
+  }
+}

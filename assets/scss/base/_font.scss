@@ -26,3 +26,22 @@ h6 {
     font-size: 16px;
   }
 }
+time {
+  h6 {
+    color: $gray-300;
+    font-weight: 700;
+    line-height: 19.2px;
+    letter-spacing: 0.1em;
+
+
+    @include pad {
+      font-weight: 600;
+      line-height: 1.25;
+    }
+  }
+}
+.breadcrumb-item {
+  @include pad {
+    font-size: 14px;
+  }
+}

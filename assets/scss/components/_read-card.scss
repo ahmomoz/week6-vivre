@@ -1,0 +1,75 @@
+.read-card-wrap {
+  margin-top: 40px;
+
+  @include pad {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 20px;
+
+    &::-webkit-scrollbar {
+      height: 0;
+    }
+  }
+}
+
+.read-card {
+  border-radius: 0;
+  border-bottom: 1px solid $gray-200;
+  padding-bottom: 24px;
+
+  @include pad {
+    width: 325px;
+  }
+  
+  &:nth-child(2),
+  &:nth-child(3) {
+    margin-top: 40px;
+    
+    @include pad {
+      margin-top: 0;
+      margin-left: 24px;
+    }
+  }
+
+  p {
+    color: $gray-400;
+  }
+
+  img {
+    border-radius: 4px;
+    
+    @include pad {
+      height: 200px;
+    }
+  }
+  .card-body {
+    padding: 0;
+  }
+
+  .col-md-9 {
+    @include pad {
+      margin-top: 15px;
+    }
+  }
+
+  .card-btn {
+    display: flex;
+    justify-content: end;
+    margin-top: 12px;
+  }
+  
+  .btn {
+    color: $accent-200;
+    border: 0;
+    padding: 8px 0;
+
+    &:hover {
+      color: $accent-300;
+    }
+
+    @include pad {
+      font-size: 20px;
+    }
+  }
+}

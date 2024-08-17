@@ -1,10 +1,25 @@
 .tag-primary {
+  color: $primary-400;
   background-color: $primary-300;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   padding: 4px 8px;
   border-radius: 4px;
 
   @include pad {
     font-size: 12px;
+  }
+}
+.tag-article-font {
+  @include pad {
+    font-size: 16px;
+  }
+}
+.tag-margin {
+  margin-left: 16px;
+
+  @include pad {
+    margin-left: 10px;
   }
 }
 .tag-secondary {

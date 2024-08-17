@@ -171,3 +171,33 @@
 .project-tag {
   margin-left: 70px;
 }
+
+/* index-footer-section */
+.footer-title {
+  display: flex;
+  justify-content: space-between;
+
+  @include pad {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    @include pad {
+      font-size: 24px;
+    }
+  }
+}
+.footer-content {
+  @include pad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+  }
+
+  h5 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}

@@ -9,10 +9,14 @@
 
 @import './vendors/swiper.scss';
 
-@import './pages/index.scss';
 @import './components/btn.scss';
 @import './components/tag.scss';
+@import './components/link-hover.scss';
 @import './components/theme-card.scss';
 @import './components/article-card.scss';
 @import './components/life-card.scss';
 @import './components/project-card.scss';
+@import './components/read-card.scss';
+
+@import './pages/index.scss';
+@import './pages/article.scss';

@@ -22,12 +22,12 @@
 .swiper-life-button-next {
   width: 56px;
   height: 32px;
-  border: 1px solid #6C757D;
+  border: 1px solid $gray-400;
   border-radius: 100px;
   text-align: center;
 
   i {
-    color: #6C757D;
+    color: $gray-400;
   }
 
   &:hover {
