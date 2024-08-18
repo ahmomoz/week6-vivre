@@ -29,3 +29,15 @@
     border-color: $accent-300;
   }
 }
+.coupon-btn {
+  color: $gray-400;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 20px;
+  margin-left: 12px;
+  flex-shrink: 0;
+
+  @include pad {
+    padding: 12px 16px;
+  }
+}

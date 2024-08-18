@@ -450,7 +450,8 @@ $spacers: (
   9: $spacer * 2.25,
   10: $spacer * 2.5,
   11: $spacer * 3,
-  12: $spacer * 4 
+  12: $spacer * 4,
+  13: $spacer * 5 
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -764,15 +765,15 @@ $mark-bg:                     $yellow-100 !default;
 // Customizes the `.table` component with basic values, each used across all table variations.
 
 // scss-docs-start table-variables
-$table-cell-padding-y:        .5rem !default;
-$table-cell-padding-x:        .5rem !default;
+$table-cell-padding-y:        0; // .5rem !default; custom
+$table-cell-padding-x:        0; // .5rem !default; custom
 $table-cell-padding-y-sm:     .25rem !default;
 $table-cell-padding-x-sm:     .25rem !default;
 
 $table-cell-vertical-align:   top !default;
 
 $table-color:                 var(--#{$prefix}emphasis-color) !default;
-$table-bg:                    var(--#{$prefix}body-bg) !default;
+$table-bg:                    $white;// var(--#{$prefix}body-bg) !default; custom
 $table-accent-bg:             transparent !default;
 
 $table-th-font-weight:        null !default;
@@ -826,7 +827,7 @@ $input-btn-padding-y:         .75rem; // .375rem !default; custom
 $input-btn-padding-x:         1.25rem;// .75rem !default; custom
 $input-btn-font-family:       null !default;
 $input-btn-font-size:         $font-size-base !default;
-$input-btn-line-height:       $line-height-base !default;
+$input-btn-line-height:       1.2; // $line-height-base !default; custom
 
 $input-btn-focus-width:         $focus-ring-width !default;
 $input-btn-focus-color-opacity: $focus-ring-opacity !default;
@@ -910,7 +911,7 @@ $form-text-color:                       var(--#{$prefix}secondary-color) !defaul
 // scss-docs-end form-text-variables
 
 // scss-docs-start form-label-variables
-$form-label-margin-bottom:              .5rem !default;
+$form-label-margin-bottom:              .75rem; // .5rem !default; custom
 $form-label-font-size:                  null !default;
 $form-label-font-style:                 null !default;
 $form-label-font-weight:                null !default;
@@ -989,9 +990,9 @@ $form-check-radio-border-radius:          50% !default;
 $form-check-input-focus-border:           $input-focus-border-color !default;
 $form-check-input-focus-box-shadow:       $focus-ring-box-shadow !default;
 
-$form-check-input-checked-color:          $component-active-color !default;
-$form-check-input-checked-bg-color:       $component-active-bg !default;
-$form-check-input-checked-border-color:   $form-check-input-checked-bg-color !default;
+$form-check-input-checked-color:          $white;// $component-active-color !default; custom
+$form-check-input-checked-bg-color:       $accent-200; // $component-active-bg !default; custom
+$form-check-input-checked-border-color:   $accent-200; // $form-check-input-checked-bg-color !default; custom
 $form-check-input-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>") !default;
 $form-check-radio-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$form-check-input-checked-color}'/></svg>") !default;
 

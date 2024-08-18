@@ -20,6 +20,10 @@ li {
 img {
   object-fit: cover;
 }
+picture {
+  display: block;
+}
+
 .material-symbols-outlined {
   width: 24px; height: 24px;
 }
@@ -59,4 +63,3 @@ input[type="search"]::-moz-search-clear-button {
   background-position: center;
   background-size: cover;
 }
-

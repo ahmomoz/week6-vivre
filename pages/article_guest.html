@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif+TC:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +22,7 @@
   <body>
     <%- include('./layout/header'); -%>
     <header class="article-banner-section">
-      <div class="container px-0">
+      <div class="container px-0 px-lg-3">
         <picture>
           <source
             srcset="/assets/images/article-banner-sm.png"
@@ -96,12 +94,14 @@
                 本篇為會員專屬文章</br>馬上訂閱瀏覽所有內容！
               </h6>
               <div class="d-flex justify-content-center">
-                <button
-                  type="button"
-                  class="btn btn-accent mt-3 mt-md-4">
-                  <a href="subscription.html">我要訂閱</a>
-                  <i class="bi bi-arrow-right ms-3"></i>
-                </button>
+                <a href="subscription.html">
+                  <button
+                    type="button"
+                    class="btn btn-accent mt-3 mt-md-4">
+                    我要訂閱
+                    <i class="bi bi-arrow-right ms-3"></i>
+                  </button>
+                </a>
               </div>
             </section>
             <section class="article-read-section pb-5">
@@ -130,7 +130,7 @@
                             遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜...
                           </p>
                           <div class="card-btn">
-                            <a href="article.html" class="btn">
+                            <a href="article_guest.html" class="btn">
                               Read More
                             </a>
                           </div>
@@ -160,7 +160,7 @@
                             終於!我實現了一個看似瘋狂的想法—在熟悉的城市裡野營一晚。說實話,一開始我也有點懷疑自己,畢竟眾目睽睽之下搭帳篷實在有點怪異。不過漸漸地,這股初時的侷促不...
                           </p>
                           <div class="card-btn">
-                            <a href="article.html" class="btn">
+                            <a href="article_guest.html" class="btn">
                               Read More
                             </a>
                           </div>
@@ -190,7 +190,7 @@
                             說實話,一開始我有點擔心帶著我的狗狗露營會不會太麻煩。畢竟要照顧牠的飲食起居,還得注意牠的安全。不過這次經驗讓我徹底改觀了!出發前,我特意為狗狗準備了適當...
                           </p>
                           <div class="card-btn">
-                            <a href="article.html" class="btn">
+                            <a href="article_guest.html" class="btn">
                               Read More
                             </a>
                           </div>

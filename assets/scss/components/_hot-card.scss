@@ -1,0 +1,39 @@
+.hot-card-wrap {
+  @include pad {
+    box-shadow: 0px 2px 8px 0px #6E6B6714;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      height: 0;
+    }
+  }
+
+  .card-body {
+    padding: 40px;
+
+    @include pad {
+      width: 324px;
+      margin-right: 24px;
+      padding: 16px;
+    }
+  }
+  .card-text {
+    margin-top: 0;
+    padding: 0 24px 24px;
+
+    @include pad {
+      margin-top: 16px;
+      padding: 0;
+    }
+  }
+  .card-group {
+    border-radius: 20px;
+
+    @include pad {
+      border-radius: 4px;
+    }
+  }
+}

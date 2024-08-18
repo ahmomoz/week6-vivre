@@ -14,13 +14,18 @@
 @import './components/link-hover.scss';
 @import './components/theme-card.scss';
 @import './components/article-card.scss';
+@import './components/hot-card.scss';
 @import './components/life-card.scss';
 @import './components/project-card.scss';
 @import './components/read-card.scss';
 @import './components/subscription-card.scss';
+@import './components/input-card.scss';
 
 
 @import './pages/index.scss';
 @import './pages/article.scss';
 @import './pages/subscription.scss';
-@import './pages/sign_up.scss';
+@import './pages/auth.scss';
+@import './pages/_booking.scss';
+@import './pages/_about.scss';
+

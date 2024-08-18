@@ -1,0 +1,10 @@
+.input-card {
+  border: 1px solid #E8E3DA;
+  border-radius: 12px;
+  background-color: $white;
+  padding: 40px;
+
+  @include pad {
+    padding: 24px;
+  }
+}

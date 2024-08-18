@@ -1,4 +1,17 @@
 .layout-nav-wrap {
+  .nav-border {
+    border-bottom: 1px solid $gray-300;
+    width: 100%;
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+
+    @include pad {
+      border: 0;
+    }
+  }
+  
   i {
     margin-right: 20px;
 

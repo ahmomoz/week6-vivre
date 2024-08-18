@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif+TC:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+TC:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" type="text/css" href="../../node_modules/icofont/dist/icofont.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>Vivre - 付款</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main class="booking-section wrap-lg">
+      <div class="container">
+        <div class="row">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a
+                  href="index.html"
+                  class="text-gray-light link-hover">
+                  首頁
+                </a>
+              </li>
+              <li class="breadcrumb-item">
+                <a
+                  href="index.html"
+                  class="text-gray-light link-hover">
+                  訂閱方案
+                </a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                付款
+              </li>
+            </ol>
+          </nav>
+          <h1 class="mt-2 mt-lg-5">付款</h1>
+          <div class="col-lg-7 mt-10 mt-lg-11">
+            <div class="input-card card">
+              <h4 class="fw-bolder">購買人</h4>
+              <form class="mt-6 mt-lg-10">
+                <div>
+                  <label for="buyerName" class="form-label">
+                    <h6 class="fw-bold">姓名</h6>
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control border-0 bg-light"
+                    id="buyerName"
+                    placeholder="請輸入姓名">
+                </div>
+                <div>
+                  <label for="buyerPassword" class="form-label mt-4">
+                    <h6 class="fw-bold">密碼</h6>
+                  </label>
+                  <input
+                    type="password"
+                    class="form-control border-0 bg-light"
+                    id="buyerPassword"
+                    placeholder="請輸入密碼">
+                </div>
+                <div>
+                  <label for="buyerEmail" class="form-label mt-4">
+                    <h6 class="fw-bold">電子信箱</h6>
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control border-0 bg-light"
+                    id="buyerEmail"
+                    aria-describedby="emailHelp"
+                    placeholder="請輸入電子信箱">
+                </div>
+                <div class="form-check mt-6">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="rememberMeCheckbox">
+                  <label
+                    class="form-check-label"
+                    for="rememberMeCheckbox">
+                    記住我的資訊
+                  </label>
+                </div>
+              </form>
+            </div>
+            <div class="input-card card mt-6">
+              <h4 class="fw-bolder">付款方式</h4>
+              <form class="mt-6 mt-lg-10">
+                <div>
+                  <label for="pay-with" class="form-label">
+                    <h6 class="fw-bold newsreader">Pay With</h6>
+                  </label>
+                  <div class="form-check mt-1 mt-lg-4">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="pay-with"
+                      id="creditCard"
+                      checked>
+                    <label
+                      class="form-check-label"
+                      for="creditCard">
+                      信用卡
+                    </label>
+                  </div>
+                </div>
+                <div class="mt-6 mt-lg-10">
+                  <label for="userCreditCardNumber" class="form-label">
+                    <h6 class="fw-bold">信用卡號碼</h6>
+                  </label>
+                  <input
+                    type="password"
+                    class="form-control border-0 bg-light"
+                    id="userCreditCardNumber"
+                    placeholder="1234 5678 1234 5678"
+                    maxlength="12">
+                </div>
+                <div class="row mt-4">
+                  <div class="col-6">
+                    <label for="credit-card-expiration" class="form-label">
+                      <h6 class="fw-bold">過期日</h6>
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control border-0 bg-light"
+                      id="credit-card-expiration"
+                      name="credit-card-expiration"
+                      placeholder="MM/YY"
+                      pattern="\d{2}/\d{2}"
+                      maxlength="5" 
+                      required>
+                  </div>
+                  <div class="col-6">
+                    <label for="credit-card-cvc" class="form-label">
+                      <h6 class="fw-bold">認證碼</h6>
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control border-0 bg-light"
+                      id="credit-card-cvc"
+                      name="credit-card-cvc" 
+                      placeholder="CVV"
+                      pattern="\d{3,4}"
+                      maxlength="4"
+                      required>
+                  </div>
+                </div>
+                <div class="form-check mt-6">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="rememberCardCheckbox">
+                  <label
+                    class="form-check-label"
+                    for="rememberCardCheckbox">
+                    記住卡片資訊
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-5 mt-10 mt-lg-11">
+            <div class="input-card card border-accent">
+              <h4 class="text-accent fw-bolder">訂單資訊</h4>
+              <table class="table mb-0 mt-6 mt-lg-10">
+                <tbody>
+                  <tr>
+                    <th scope="row" class="border-0">
+                      <h5 class="pt-6">輕量型方案</h5>
+                    </th>
+                    <td class="border-0 text-end">
+                      <h5 class="newsreader pt-6">
+                        NT 1,188
+                      </h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="border-0">
+                      <h6
+                        class="fs-6 fw-bold pb-6 mt-3"
+                        style="color: #A1A1AA">
+                        年繳
+                      </h6>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="mt-6 mt-lg-10">
+                <label for="coupon" class="form-label">
+                  <h6 class="fw-bold">折扣碼</h6>
+                </label>
+                <div class="d-flex justify-content-between">
+                  <input
+                    type="text"
+                    class="form-control border-0 bg-light flex-grow-1"
+                    id="coupon"
+                    placeholder="請輸入折扣碼">
+                  <div class="coupon-btn btn btn-light">
+                    套用
+                  </div>
+                </div>
+              </div>
+              <table class="table mb-0 mt-6 mt-lg-10">
+                <tbody>
+                  <tr>
+                    <th scope="row" class="border-0">
+                      <h5 class="fw-bold fs-6 pt-6">小計</h5>
+                    </th>
+                    <td class="border-0 text-end">
+                      <h5 class="fw-bold fs-6 newsreader pt-6">
+                        NT 1,188
+                      </h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="border-0">
+                      <h5 class="fw-bold fs-6 mt-3 pb-6">折扣</h5>
+                    </th>
+                    <td class="border-0 text-end">
+                      <h5 class="fw-bold fs-6 newsreader mt-3 pb-6">
+                        0
+                      </h5>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table border-0 mb-0 mt-6 mt-lg-10">
+                <tbody>
+                  <tr>
+                    <th scope="row" class="border-0">
+                      <h5 class="fw-bold fs-6">總計</h5>
+                    </th>
+                    <td class="border-0 text-end">
+                      <h5 class="total-price fw-bold newsreader">
+                        NT 1,188
+                      </h5>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="booking_success.html">
+                <button
+                  type="button"
+                  class="btn btn-accent w-100 d-flex align-items-center justify-content-center mt-6 mt-lg-10">
+                  
+                    立即付款
+                  <i class="bi bi-arrow-right ms-3"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

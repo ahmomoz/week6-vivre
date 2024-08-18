@@ -1,0 +1,18 @@
+.sign_up-section,
+.login-section {
+  .btn {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+.divider-label {
+  color: $gray-300;
+
+  hr {
+    flex-grow: 1;
+    border: none;
+    height: 1px;
+    background-color: $gray-300;
+    margin: 0 12px;
+  } 
+}
