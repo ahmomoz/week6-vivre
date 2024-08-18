@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif+TC:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,68 +17,72 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <title>index</title>
-    <script type="module" crossorigin src="/week6-vivre/assets/main-0194ca50.js"></script>
-    <link rel="stylesheet" href="/week6-vivre/assets/main-72d21939.css">
+    <title>Vivre</title>
+    <script type="module" crossorigin src="/week6-vivre/assets/main-b4c9b405.js"></script>
+    <link rel="stylesheet" href="/week6-vivre/assets/main-7387d1ae.css">
   </head>
   <body>
-    <nav class="layout-nav-wrap navbar navbar-expand-lg navbar-light p-0">
-  <div class="container-md border-bottom px-3 px-md-0 py-4 py-md-9">
-    <a class="navbar-brand p-0" href="#">
-      <img
-        src="data:image/png;base64,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"
-        alt="logo-image"
-        style="width: 96px; height: 28px;">
-    </a>
-    <button
-      class="navbar-toggler border-0 collapsed" type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <button
-      type="button"
-      class="btn-close collapse"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Close"
-      id="navbarSupportedContent">
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <form class="d-flex flex-column flex-md-row align-items-md-center justify-content-md-end">
-        <input
-          class="form-control rounded-pill position-reative w-100 mt-6 mt-lg-0 ms-lg-8"
-          type="search" placeholder="搜尋文章"
-          aria-label="Search" style="width: 276px;">
-        <i class="icofont-search position-absolute text-accent d-flex align-items-center"></i>
-      </form>
-      <ul class="navbar-nav fw-bold align-items-lg-center ms-lg-auto">
-        <li class="nav-item p-3 p-lg-0 mt-6 mt-lg-0">
-          <a class="nav-link px-5" href="#">
-            所有文章
-          </a>
-        </li>
-        <li class="nav-item p-3 p-lg-0 mt-6 mt-lg-0 ms-lg-5">
-          <a class="nav-link px-5" href="#">
-            訂閱方案
-          </a>
-        </li>
-        <li class="nav-item p-3 p-lg-0 mt-6 mt-lg-0 ms-lg-5">
-          <a class="nav-link px-5" href="#">
-            關於我們
-          </a>
-        </li>
-        <li class="mt-10 mt-lg-0 ms-lg-5">
-          <button type="button" class="btn btn-accent lh-sm w-100 d-block d-lg-flex">
-            登入 / 註冊
-          </button>
-        </li>
-      </ul>
+    <nav class="layout-nav-wrap navbar navbar-expand-xl navbar-light p-0">
+  <div class="container">
+    <div class="nav-border py-4 py-md-9">
+      <a href="index.html" class="navbar-brand p-0">
+        <img
+          src="data:image/png;base64,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"
+          alt="logo-image"
+          style="width: 96px; height: 28px;">
+      </a>
+      <button
+        class="navbar-toggler border-0 collapsed" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <button
+        type="button"
+        class="btn-close collapse"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Close"
+        id="navbarSupportedContent">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="d-flex flex-column flex-md-row align-items-md-center justify-content-md-end">
+          <input
+            class="form-control rounded-pill position-reative w-100 mt-6 mt-lg-0 ms-lg-8"
+            type="search" placeholder="搜尋文章"
+            aria-label="Search" style="width: 276px;">
+          <i class="bi bi-search position-absolute text-accent d-flex align-items-center"></i>
+        </form>
+        <ul class="navbar-nav fw-bold align-items-lg-center ms-lg-auto">
+          <li class="nav-item p-3 p-lg-0 mt-6 mt-lg-0">
+            <a class="nav-link px-5" href="#">
+              所有文章
+            </a>
+          </li>
+          <li class="nav-item p-3 p-lg-0 mt-6 mt-lg-0 ms-lg-5">
+            <a class="nav-link px-5" href="subscription.html">
+              訂閱方案
+            </a>
+          </li>
+          <li class="nav-item p-3 p-lg-0 mt-6 mt-lg-0 ms-lg-5">
+            <a class="nav-link px-5" href="about.html">
+              關於我們
+            </a>
+          </li>
+          <li class="mt-10 mt-lg-0 ms-lg-5">
+            <a href="login.html">
+              <button type="button" class="btn btn-accent fs-6 fw-bold lh-sm w-100 d-block d-lg-flex">
+                登入 / 註冊
+              </button>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>    <header class="index-banner-section">
@@ -90,10 +92,14 @@
             <h5 class="text-white">獻給新世代的生活風格誌</h5>
             <h1 class="text-white mt-3">一起探索生活的無限可能</h1>
             <div>
-              <button type="button" class="btn btn-accent mt-5 mt-md-6">
-                馬上訂閱
-                <i class="bi bi-arrow-right ms-3"></i>
-              </button>
+              <a href="subscription.html">
+                <button
+                  type="button"
+                  class="btn btn-accent mt-5 mt-md-6">
+                  馬上訂閱
+                  <i class="bi bi-arrow-right ms-3"></i>
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -258,7 +264,7 @@
             <!-- Swiper -->
             <div class="col-lg-8 swiper articleSwiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide card article-card">
+                <div class="swiper-slide article-card card">
                   <picture>
                     <source
                       srcset="/week6-vivre/assets/articles-1-sm-203688b1.png "
@@ -276,13 +282,13 @@
                       遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
                     </p>
                     <div class="card-btn">
-                      <a href="#" class="btn">
+                      <a href="article_guest.html" class="btn">
                         Read More
                       </a>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide card article-card">
+                <div class="swiper-slide article-card card">
                   <picture>
                     <source
                       srcset="/week6-vivre/assets/articles-2-sm-30531557.png "
@@ -300,14 +306,14 @@
                       在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
                     </p>
                     <div class="card-btn">
-                      <a href="#" class="btn">
+                      <a href="article_guest.html" class="btn">
                         Read More
                       </a>
                       <span class="tag-primary">會員專屬</span>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide card article-card">
+                <div class="swiper-slide article-card card">
                   <picture>
                     <source
                       srcset="/week6-vivre/assets/articles-1-sm-203688b1.png "
@@ -325,13 +331,13 @@
                       在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
                     </p>
                     <div class="card-btn">
-                      <a href="#" class="btn">
+                      <a href="article_guest.html" class="btn">
                         Read More
                       </a>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide card article-card">
+                <div class="swiper-slide article-card card">
                   <picture>
                     <source
                       srcset="/week6-vivre/assets/articles-2-sm-30531557.png "
@@ -349,14 +355,14 @@
                       在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
                     </p>
                     <div class="card-btn">
-                      <a href="#" class="btn">
+                      <a href="article_guest.html" class="btn">
                         Read More
                       </a>
                       <span class="tag-primary">會員專屬</span>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide card article-card">
+                <div class="swiper-slide article-card card">
                   <picture>
                     <source
                       srcset="/week6-vivre/assets/articles-1-sm-203688b1.png "
@@ -374,7 +380,7 @@
                       在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
                     </p>
                     <div class="card-btn">
-                      <a href="#" class="btn">
+                      <a href="article_guest.html" class="btn">
                         Read More
                       </a>
                     </div>
@@ -552,14 +558,14 @@
                     </div>
                   </div>
                   <div class="text-center d-lg-flex justify-content-between align-items-center p-lg-6 mt-lg-4">
-                    <ul class="d-flex justify-content-center justify-content-lg-start mt-4 mt-lg-0 mb-0 p-0">
+                    <ul class="d-flex justify-content-start mt-4 mt-lg-0 mb-0 p-0">
                       <li class="py-2">
                         <span class="tag-primary">#夜貓行程</span>
                       </li>
-                      <li class="ms-4 py-2">
+                      <li class="tag-margin py-2">
                         <span class="tag-primary">#barhopping</span>
                       </li>
-                      <li class="ms-4 py-2">
+                      <li class="tag-margin py-2">
                         <span class="tag-primary">#全台酒吧</span>
                       </li>
                     </ul>
@@ -630,14 +636,14 @@
                     </div>
                   </div>
                   <div class="text-center d-lg-flex justify-content-between align-items-center p-lg-6 mt-lg-4">
-                    <ul class="d-flex justify-content-center justify-content-lg-start mt-4 mt-lg-0 mb-0 p-0">
+                    <ul class="d-flex justify-content-start mt-4 mt-lg-0 mb-0 p-0">
                       <li class="py-2">
                         <span class="tag-primary">#雞白湯</span>
                       </li>
-                      <li class="ms-4 py-2">
+                      <li class="tag-margin py-2">
                         <span class="tag-primary">#拉麵</span>
                       </li>
-                      <li class="ms-4 py-2">
+                      <li class="tag-margin py-2">
                         <span class="tag-primary">#台灣美食</span>
                       </li>
                     </ul>
@@ -708,14 +714,14 @@
                     </div>
                   </div>
                   <div class="text-center d-lg-flex justify-content-between align-items-center p-lg-6 mt-lg-4">
-                    <ul class="d-flex justify-content-center justify-content-lg-start mt-4 mt-lg-0 mb-0 p-0">
+                    <ul class="d-flex justify-content-start mt-4 mt-lg-0 mb-0 p-0">
                       <li class="py-2">
                         <span class="tag-primary">#熱帶國家</span>
                       </li>
-                      <li class="ms-4 py-2">
+                      <li class="tag-margin py-2">
                         <span class="tag-primary">#海邊</span>
                       </li>
-                      <li class="ms-4 py-2">
+                      <li class="tag-margin py-2">
                         <span class="tag-primary">#無敵海景</span>
                       </li>
                     </ul>
@@ -786,14 +792,14 @@
                     </div>
                   </div>
                   <div class="text-center d-lg-flex justify-content-between align-items-center p-lg-6 mt-lg-4">
-                    <ul class="d-flex justify-content-center justify-content-lg-start mt-4 mt-lg-0 mb-0 p-0">
+                    <ul class="d-flex justify-content-start mt-4 mt-lg-0 mb-0 p-0">
                       <li class="py-2">
                         <span class="tag-primary">#說走就走</span>
                       </li>
-                      <li class="ms-4 py-2">
+                      <li class="tag-margin py-2">
                         <span class="tag-primary">#出國玩</span>
                       </li>
-                      <li class="ms-4 py-2">
+                      <li class="tag-margin py-2">
                         <span class="tag-primary">#東亞</span>
                       </li>
                     </ul>
@@ -864,14 +870,14 @@
                     </div>
                   </div>
                   <div class="text-center d-lg-flex justify-content-between align-items-center p-lg-6 mt-lg-4">
-                    <ul class="d-flex justify-content-center justify-content-lg-start mt-4 mt-lg-0 mb-0 p-0">
+                    <ul class="d-flex justify-content-start mt-4 mt-lg-0 mb-0 p-0">
                       <li class="py-2">
                         <span class="tag-primary">#戶外</span>
                       </li>
-                      <li class="ms-4 py-2">
+                      <li class="tag-margin py-2">
                         <span class="tag-primary">#露營控</span>
                       </li>
-                      <li class="ms-4 py-2">
+                      <li class="tag-margin py-2">
                         <span class="tag-primary">#凹豆</span>
                       </li>
                     </ul>
@@ -910,7 +916,7 @@
             </div>
           </div>
           <div class="row row-cols-lg-3 row-cols-1 mt-6 mt-lg-10">
-            <div class="col card life-card h-100 d-flex flex-column">
+            <div class="col life-card card">
               <h4 class="display-5">食.</h4>
               <img
                 src="/week6-vivre/assets/life-1-dc3e4076.png"
@@ -945,7 +951,7 @@
                 </div>
               </div>
             </div>
-            <div class="col card life-card h-100 d-flex flex-column">
+            <div class="col life-card card">
               <h4 class="display-5">藝.</h4>
               <img
                 src="/week6-vivre/assets/life-2-e0514e49.png"
@@ -980,7 +986,7 @@
                 </div>
               </div>
             </div>
-            <div class="col card life-card h-100 d-flex flex-column">
+            <div class="col life-card card">
               <h4 class="display-5">旅.</h4>
               <img
                 src="/week6-vivre/assets/life-3-5b7bb55a.png"
@@ -1025,16 +1031,20 @@
               <div class="h-100 d-flex flex-column align-items-center align-items-lg-start justify-content-center">
                 <h5>今天又不知道要去哪裡了嗎？</h5>
                 <h2 class="project-section-title mt-4 mt-lg-3">
-                  <span class="d-block">Vivre<span>
-                  <span class="d-block mt-2 mt-lg-0">
+                  <span class="d-block d-lg-inline">Vivre<span>
+                  <span class="d-block d-lg-inline mt-2 mt-lg-0">
                     給你意想不到的生活風格提案
                   <span>
                 </h2>
                 <div>
-                  <button type="button" class="btn btn-accent mt-6">
-                    馬上訂閱
-                    <i class="bi bi-arrow-right ms-3"></i>
-                  </button>
+                  <a href="subscription.html">
+                    <button
+                      type="button"
+                      class="btn btn-accent mt-6">
+                      馬上訂閱
+                      <i class="bi bi-arrow-right ms-3"></i>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1047,31 +1057,33 @@
                         src="/week6-vivre/assets/projects-2-28f2afc5.png"
                         class="card-img rounded h-100"
                         alt="theme-image">
-                      <div class="porject-overlay">
-                        <h6 class="text-white fw-bold">親子露營要帶什麼？</h6>
+                      <div class="porject-overlay rounded-bottom">
+                        <h6 class="text-white fw-bold">
+                          親子露營要帶什麼？
+                        </h6>
                         <i class="bi bi-arrow-right ms-auto"></i>
                       </div>
                       <div class="project-tag position-absolute top-0 start-0 translate-middle tag-secondary">
-                        <i class="bi bi-play-fill"></i>
-                        <span>人氣行程</span>
+                        <i class="bi bi-play-fill fs-6"></i>
+                        <span class="ms-2">人氣行程</span>
                       </div>
                     </div>
                   </a>
                   <a href="#" class="d-block">
                     <div class="project-card card mt-lg-10 ms-6 ms-lg-0">
                       <img
-                        src="/week6-vivre/assets/projects-4-c31b35a0.png"
+                        src="/week6-vivre/assets/projects-5-96288cb9.png"
                         class="card-img rounded h-100"
                         alt="theme-image">
-                      <div class="porject-overlay">
+                      <div class="porject-overlay rounded-bottom">
                         <h6 class="text-white fw-bold">
                           質感房間改造攻略！
                         </h6>
                         <i class="bi bi-arrow-right ms-auto"></i>
                       </div>
                       <div class="project-tag position-absolute top-0 start-0 translate-middle tag-secondary">
-                        <i class="bi bi-play-fill"></i>
-                        <span>編輯推薦</span>
+                        <i class="bi bi-play-fill fs-6"></i>
+                        <span class="ms-2">編輯推薦</span>
                       </div>
                     </div>
                   </a>
@@ -1083,15 +1095,15 @@
                         src="/week6-vivre/assets/projects-1-1192f106.png"
                         class="card-img rounded h-100"
                         alt="theme-image">
-                      <div class="porject-overlay">
+                      <div class="porject-overlay rounded-bottom">
                         <h6 class="text-white fw-bold">
                           山女孩的健行筆記
                         </h6>
                         <i class="bi bi-arrow-right ms-auto"></i>
                       </div>
                       <div class="project-tag position-absolute top-0 start-0 translate-middle tag-secondary">
-                        <i class="bi bi-play-fill"></i>
-                        <span>編輯推薦</span>
+                        <i class="bi bi-play-fill fs-6"></i>
+                        <span class="ms-2">編輯推薦</span>
                       </div>
                     </div>
                   </a>
@@ -1101,15 +1113,15 @@
                         src="/week6-vivre/assets/projects-3-6cd4e17c.png"
                         class="card-img rounded h-100"
                         alt="theme-image">
-                      <div class="porject-overlay">
+                      <div class="porject-overlay rounded-bottom">
                         <h6 class="text-white fw-bold">
                           適合溜小孩的海邊景點推薦
                         </h6>
                         <i class="bi bi-arrow-right ms-auto"></i>
                       </div>
                       <div class="project-tag position-absolute top-0 start-0 translate-middle tag-secondary">
-                        <i class="bi bi-play-fill"></i>
-                        <span>熱門文章</span>
+                        <i class="bi bi-play-fill fs-6"></i>
+                        <span class="ms-2">熱門文章</span>
                       </div>
                     </div>
                   </a>
@@ -1119,19 +1131,21 @@
           </div>
         </div>
       </section>
+      <section class="index-footer-section wrap">
+        <div class="container">
+          <div class="footer-title">
+            <h2>想看什麼主題由你決定！</h2>
+            <div class="footer-content">
+              <h5>歡迎投稿與我們分享</h5>
+              <button type="button" class="btn btn-accent mt-9 mt-lg-4 ms-lg-auto">
+                聯絡我們
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="layout-footer-wrap">
-  <div class="container wrap">
-    <div class="footer-title">
-      <h2>想看什麼主題由你決定！</h2>
-      <div class="footer-content">
-        <h5>歡迎投稿與我們分享</h5>
-        <button type="button" class="btn btn-accent mt-9 mt-lg-4 ms-lg-auto">
-          聯絡我們
-        </button>
-      </div>
-    </div>
-  </div>
   <div class="container px-0">
     <div class="text-center border-top py-5 py-lg-6">
       <p>©Vivre 2024 All right Reserved</p>
